@@ -1,0 +1,38 @@
+[package]
+name = "gpui-template"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Minimal GPUI + OpenHarmony (OHOS) Rust template"
+readme = "README.md"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+gpui = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
+gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
+openharmony-ability = { git = "https://github.com/harmony-contrib/openharmony-ability.git" }
+openharmony-ability-derive = { git = "https://github.com/harmony-contrib/openharmony-ability.git" }
+
+napi-ohos = { version = "=1.1.6" }
+napi-derive-ohos = { version = "=1.1.6" }
+napi-derive-backend-ohos = { version = "=1.1.6" }
+
+ohos-hilog-binding = { version = "*", features = ["log"] }
+log = { version = "*" }
+
+[build-dependencies]
+napi-build-ohos = { version = "=1.1.6" }
+
+[patch.crates-io]
+gpui = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
+gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
+
+[patch."https://github.com/zed-industries/zed.git"]
+gpui = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
+gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
+
+[patch."https://github.com/zed-industries/zed"]
+gpui = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
+gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
