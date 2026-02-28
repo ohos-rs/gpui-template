@@ -10,10 +10,15 @@ readme = "README.md"
 crate-type = ["cdylib"]
 
 [dependencies]
-gpui = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
-gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
+gpui = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
+gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
 openharmony-ability = { git = "https://github.com/harmony-contrib/openharmony-ability.git" }
 openharmony-ability-derive = { git = "https://github.com/harmony-contrib/openharmony-ability.git" }
+
+gpui-component = { git = "https://github.com/longbridge/gpui-component.git" }
+gpui-component-assets = { git = "https://github.com/longbridge/gpui-component.git" }
+gpui-router = { version = "0.3" }
+rust-embed = { version = "8.11.0", features = ["debug-embed"] }
 
 napi-ohos = { version = "=1.1.6" }
 napi-derive-ohos = { version = "=1.1.6" }
@@ -26,13 +31,13 @@ log = { version = "*" }
 napi-build-ohos = { version = "=1.1.6" }
 
 [patch.crates-io]
-gpui = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
-gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
+gpui = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
+gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
 
 [patch."https://github.com/zed-industries/zed.git"]
-gpui = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
-gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
+gpui = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
+gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
 
 [patch."https://github.com/zed-industries/zed"]
-gpui = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
-gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f898c97d914071f3f239be5b90eb3e3615ebcdba" }
+gpui = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
+gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
