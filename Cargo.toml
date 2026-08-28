@@ -10,34 +10,39 @@ readme = "README.md"
 crate-type = ["cdylib"]
 
 [dependencies]
-gpui = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
-gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
-openharmony-ability = { git = "https://github.com/harmony-contrib/openharmony-ability.git" }
-openharmony-ability-derive = { git = "https://github.com/harmony-contrib/openharmony-ability.git" }
+gpui = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a", version = "=0.2.2" }
+gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
+openharmony-ability = { version = "1.0.0-beta.2" }
+openharmony-ability-derive = { version = "1.0.0-beta.1" }
 
-gpui-component = { git = "https://github.com/longbridge/gpui-component.git" }
-gpui-component-assets = { git = "https://github.com/longbridge/gpui-component.git" }
+gpui-component = { git = "https://github.com/longbridge/gpui-component.git", rev = "9890a77c2d427f05b2512f05ddc6cce84686f9a6" }
+gpui-component-assets = { git = "https://github.com/longbridge/gpui-component.git", rev = "9890a77c2d427f05b2512f05ddc6cce84686f9a6" }
 gpui-router = { version = "0.3" }
-rust-embed = { version = "8.11.0", features = ["debug-embed"] }
+rust-embed = { version = "8.12.0", features = ["debug-embed"] }
 
-napi-ohos = { version = "=1.1.6" }
-napi-derive-ohos = { version = "=1.1.6" }
-napi-derive-backend-ohos = { version = "=1.1.6" }
+napi-ohos = { version = "=1.2.0" }
+napi-derive-ohos = { version = "=1.2.0" }
+napi-derive-backend-ohos = { version = "=1.2.0" }
 
-ohos-hilog-binding = { version = "*", features = ["log"] }
-log = { version = "*" }
+ohos-hilog-binding = { version = "0.2.3", features = ["log"] }
+log = { version = "0.4.34" }
 
 [build-dependencies]
-napi-build-ohos = { version = "=1.1.6" }
+napi-build-ohos = { version = "=1.2.0" }
 
 [patch.crates-io]
-gpui = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
-gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
+gpui = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a", version = "=0.2.2" }
+gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
+gpui_macros = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
+# gpui-router 0.3.0 needs this RenderOnce disambiguation with current GPUI.
+gpui-router = { path = "vendor/gpui-router" }
 
 [patch."https://github.com/zed-industries/zed.git"]
-gpui = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
-gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
+gpui = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a", version = "=0.2.2" }
+gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
+gpui_macros = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
 
 [patch."https://github.com/zed-industries/zed"]
-gpui = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
-gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "f1529bc6b67c4334b32a19541bf6ce61b8e185e7" }
+gpui = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a", version = "=0.2.2" }
+gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
+gpui_macros = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }

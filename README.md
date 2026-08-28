@@ -33,7 +33,7 @@
 
 ## 环境要求
 
-- Rust（建议 stable）
+- Rust 1.97.1（由 `rust-toolchain.toml` 固定）
 - 已安装 OHOS Rust 目标（至少一个）
 - 已安装并可用 `ohrs` 工具链
 

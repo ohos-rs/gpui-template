@@ -5,7 +5,7 @@ This file records license texts for key dependencies used by this project.
 ## gpui
 
 - Crate: `gpui` 0.2.2
-- Source: `https://github.com/richerfu/zed.git` (rev `f1529bc6b67c4334b32a19541bf6ce61b8e185e7`)
+- Source: `https://github.com/richerfu/zed.git` (rev `373a5c5cdec13154e6cfa114af96a6cf5b46ec7a`)
 - License: `Apache-2.0`
 - Original license file: `LICENSE-APACHE`
 
@@ -236,8 +236,8 @@ Apache License
 
 ## gpui-component
 
-- Crate: `gpui-component` 0.5.1
-- Source: `https://github.com/longbridge/gpui-component.git` (rev `5b3c3ebcaf973168d54c6a66e3ccd1fa2d115926`)
+- Crate: `gpui-component` 0.5.2
+- Source: `https://github.com/longbridge/gpui-component.git` (rev `9890a77c2d427f05b2512f05ddc6cce84686f9a6`)
 - License: `Apache-2.0`
 - Original license file: `LICENSE-APACHE`
 
@@ -438,15 +438,14 @@ END OF TERMS AND CONDITIONS
 ## gpui-router
 
 - Crate: `gpui-router` 0.3.0
-- Source: `https://crates.io/crates/gpui-router`
+- Source: vendored from `https://crates.io/crates/gpui-router` with a GPUI 0.2.2 compatibility patch
 - License declaration: `MIT` (from crate `Cargo.toml`)
-- Note: this crate package does not include a standalone `LICENSE` file in local cache;
-  MIT text is included below for compliance.
+- Original license file: `vendor/gpui-router/LICENSE`
 
 ```text
-The MIT License (MIT)
+MIT License
 
-Copyright (c) 2018 pyros2097
+Copyright (c) 2025 justjavac
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -470,7 +469,7 @@ SOFTWARE.
 
 ## rust-embed
 
-- Crate: `rust-embed` 8.11.0
+- Crate: `rust-embed` 8.12.0
 - Source: `https://crates.io/crates/rust-embed`
 - License: `MIT`
 - Original license file: `LICENSE`
