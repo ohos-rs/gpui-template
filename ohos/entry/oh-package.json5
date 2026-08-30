@@ -6,7 +6,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "@ohos-rs/ability": "0.4.0-beta.4"
+    "@ohos-rs/ability": "1.0.0-beta.2",
+    "@ohos-rs/ability-plugin-app-control": "1.0.0-beta.1"
   }
 }
-
