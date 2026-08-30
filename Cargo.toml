@@ -10,8 +10,8 @@ readme = "README.md"
 crate-type = ["cdylib"]
 
 [dependencies]
-gpui = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a", version = "=0.2.2" }
-gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
+gpui = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2", version = "=0.2.2" }
+gpui_platform = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2" }
 openharmony-ability = { version = "1.0.0-beta.2" }
 openharmony-ability-derive = { version = "1.0.0-beta.1" }
 
@@ -31,18 +31,28 @@ log = { version = "0.4.34" }
 napi-build-ohos = { version = "=1.2.0" }
 
 [patch.crates-io]
-gpui = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a", version = "=0.2.2" }
-gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
-gpui_macros = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
+gpui = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2", version = "=0.2.2" }
+gpui_platform = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2" }
+gpui_macros = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2" }
 # gpui-router 0.3.0 needs this RenderOnce disambiguation with current GPUI.
 gpui-router = { path = "vendor/gpui-router" }
 
 [patch."https://github.com/zed-industries/zed.git"]
-gpui = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a", version = "=0.2.2" }
-gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
-gpui_macros = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
+gpui = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2", version = "=0.2.2" }
+gpui_platform = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2" }
+gpui_macros = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2" }
 
 [patch."https://github.com/zed-industries/zed"]
-gpui = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a", version = "=0.2.2" }
-gpui_platform = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
-gpui_macros = { git = "https://github.com/richerfu/zed.git", rev = "373a5c5cdec13154e6cfa114af96a6cf5b46ec7a" }
+gpui = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2", version = "=0.2.2" }
+gpui_platform = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2" }
+gpui_macros = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2" }
+
+[patch."https://github.com/richerfu/zed.git"]
+gpui = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2", version = "=0.2.2" }
+gpui_platform = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2" }
+gpui_macros = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2" }
+
+[patch."https://github.com/richerfu/zed"]
+gpui = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2", version = "=0.2.2" }
+gpui_platform = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2" }
+gpui_macros = { git = "https://github.com/ohos-rs/zed.git", rev = "8fd5825db571d1bfd8504672940736787ea3acf2" }

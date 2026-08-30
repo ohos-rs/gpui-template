@@ -579,7 +579,7 @@ dependencies = [
  "addr2line",
  "cfg-if",
  "libc",
- "miniz_oxide",
+ "miniz_oxide 0.8.9",
  "object",
  "rustc-demangle",
  "windows-link 0.2.1",
@@ -1040,7 +1040,7 @@ dependencies = [
 [[package]]
 name = "collections"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "gpui_util",
  "indexmap",
@@ -1477,7 +1477,7 @@ dependencies = [
 [[package]]
 name = "derive_refineable"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1825,7 +1825,7 @@ dependencies = [
  "bit_field",
  "half",
  "lebe",
- "miniz_oxide",
+ "miniz_oxide 0.8.9",
  "num-complex",
  "pulp",
  "rayon-core",
@@ -1912,12 +1912,13 @@ checksum = "1d674e81391d1e1ab681a28d99df07927c6d4aa5b027d7da16ba32d1d21ecd99"
 
 [[package]]
 name = "flate2"
-version = "1.1.9"
+version = "1.1.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "843fba2746e448b37e26a819579957415c8cef339bf08564fe8b7ddbd959573c"
+checksum = "6e634e2e0ebac1ee034020da1ca582e17ffe4e0f5e985823721e168928136dcb"
 dependencies = [
  "crc32fast",
- "miniz_oxide",
+ "miniz_oxide 0.9.1",
+ "zlib-rs",
 ]
 
 [[package]]
@@ -2399,7 +2400,7 @@ dependencies = [
 [[package]]
 name = "gpui"
 version = "0.2.2"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "accesskit",
  "anyhow",
@@ -2612,7 +2613,7 @@ dependencies = [
 [[package]]
 name = "gpui_apple"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "anyhow",
  "block",
@@ -2635,7 +2636,7 @@ dependencies = [
 [[package]]
 name = "gpui_linux"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "accesskit",
  "accesskit_unix",
@@ -2681,7 +2682,7 @@ dependencies = [
 [[package]]
 name = "gpui_macos"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "accesskit",
  "accesskit_macos",
@@ -2727,7 +2728,7 @@ dependencies = [
 [[package]]
 name = "gpui_macros"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "heck 0.5.0",
  "proc-macro2",
@@ -2738,7 +2739,7 @@ dependencies = [
 [[package]]
 name = "gpui_ohos"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "anyhow",
  "bytemuck",
@@ -2765,7 +2766,7 @@ dependencies = [
 [[package]]
 name = "gpui_platform"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "console_error_panic_hook",
  "gpui",
@@ -2779,7 +2780,7 @@ dependencies = [
 [[package]]
 name = "gpui_shared_string"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "schemars",
  "serde",
@@ -2789,7 +2790,7 @@ dependencies = [
 [[package]]
 name = "gpui_util"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "anyhow",
  "log",
@@ -2799,7 +2800,7 @@ dependencies = [
 [[package]]
 name = "gpui_web"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "anyhow",
  "console_error_panic_hook",
@@ -2823,7 +2824,7 @@ dependencies = [
 [[package]]
 name = "gpui_wgpu"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "anyhow",
  "bytemuck",
@@ -2849,7 +2850,7 @@ dependencies = [
 [[package]]
 name = "gpui_windows"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "accesskit",
  "accesskit_windows",
@@ -3077,7 +3078,7 @@ dependencies = [
 [[package]]
 name = "http_client"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "anyhow",
  "async-compression",
@@ -3111,9 +3112,9 @@ dependencies = [
 
 [[package]]
 name = "hyper"
-version = "1.11.0"
+version = "1.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d22053281f852e11534f5198498373cbb59295120a20771d90f7ed1897490a72"
+checksum = "27b501faa50e7a26c3d3560ca625132f4078a17771f4810baf70475ae48cbe43"
 dependencies = [
  "atomic-waker",
  "bytes",
@@ -3363,9 +3364,9 @@ checksum = "6e44b0a4eaa4c82f441d50a963f2d5f05a787240aeee097597033e72accfd22f"
 
 [[package]]
 name = "indexmap"
-version = "2.14.0"
+version = "2.14.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d466e9454f08e4a911e14806c24e16fba1b4c121d1ea474396f396069cf949d9"
+checksum = "07aa2048142242915a31d35844fb311e0e53fcca590c3a0a40dcf1b841fa09eb"
 dependencies = [
  "equivalent",
  "hashbrown 0.17.1",
@@ -3936,7 +3937,7 @@ dependencies = [
 [[package]]
 name = "media"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "anyhow",
  "bindgen",
@@ -4013,6 +4014,16 @@ name = "miniz_oxide"
 version = "0.8.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1fa76a2c86f704bdb222d66965fb3d63269ce38518b83cb0575fca855ebb6316"
+dependencies = [
+ "adler2",
+ "simd-adler32",
+]
+
+[[package]]
+name = "miniz_oxide"
+version = "0.9.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b63fbc4a50860e98e7b2aa7804ded1db5cbc3aff9193adaff57a6931bf7c4b4c"
 dependencies = [
  "adler2",
  "simd-adler32",
@@ -5080,7 +5091,7 @@ checksum = "35fb2e5f958ec131621fdd531e9fc186ed768cbe395337403ae56c17a74c68ec"
 [[package]]
 name = "path"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "anyhow",
  "dunce",
@@ -5125,7 +5136,7 @@ checksum = "9b4f627cb1b25917193a259e49bdad08f671f8d9708acfd5fe0a8c1455d87220"
 [[package]]
 name = "perf"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "collections",
  "serde",
@@ -5272,7 +5283,7 @@ dependencies = [
  "crc32fast",
  "fdeflate",
  "flate2",
- "miniz_oxide",
+ "miniz_oxide 0.8.9",
 ]
 
 [[package]]
@@ -5285,7 +5296,7 @@ dependencies = [
  "crc32fast",
  "fdeflate",
  "flate2",
- "miniz_oxide",
+ "miniz_oxide 0.8.9",
 ]
 
 [[package]]
@@ -5844,7 +5855,7 @@ dependencies = [
 [[package]]
 name = "refineable"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "derive_refineable",
 ]
@@ -6196,7 +6207,7 @@ dependencies = [
 [[package]]
 name = "scheduler"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "async-task",
  "backtrace",
@@ -6747,7 +6758,7 @@ checksum = "13c2bddecc57b384dee18652358fb23172facb8a2c51ccc10d74c157bdea3292"
 [[package]]
 name = "sum_tree"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "heapless",
  "log",
@@ -7642,7 +7653,7 @@ checksum = "b6c140620e7ffbb22c2dee59cafe6084a59b5ffc27a8859a5f0d494b5d52b6be"
 [[package]]
 name = "util"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "anyhow",
  "async-fs",
@@ -7683,7 +7694,7 @@ dependencies = [
 [[package]]
 name = "util_macros"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "perf",
  "quote",
@@ -9400,9 +9411,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "zlib-rs"
+version = "0.6.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "34b31d188d9d685a4f9c7b46d6e36631b07058d2cfe190267adce54dc230bf12"
+
+[[package]]
 name = "zlog"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "anyhow",
  "chrono",
@@ -9419,7 +9436,7 @@ checksum = "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b"
 [[package]]
 name = "ztracing"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 dependencies = [
  "tracing",
  "tracing-subscriber",
@@ -9430,7 +9447,7 @@ dependencies = [
 [[package]]
 name = "ztracing_macro"
 version = "0.1.0"
-source = "git+https://github.com/richerfu/zed.git?rev=373a5c5cdec13154e6cfa114af96a6cf5b46ec7a#373a5c5cdec13154e6cfa114af96a6cf5b46ec7a"
+source = "git+https://github.com/ohos-rs/zed.git?rev=8fd5825db571d1bfd8504672940736787ea3acf2#8fd5825db571d1bfd8504672940736787ea3acf2"
 
 [[package]]
 name = "zune-core"

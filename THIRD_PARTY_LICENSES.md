@@ -5,7 +5,7 @@ This file records license texts for key dependencies used by this project.
 ## gpui
 
 - Crate: `gpui` 0.2.2
-- Source: `https://github.com/richerfu/zed.git` (rev `373a5c5cdec13154e6cfa114af96a6cf5b46ec7a`)
+- Source: `https://github.com/ohos-rs/zed.git` (rev `8fd5825db571d1bfd8504672940736787ea3acf2`)
 - License: `Apache-2.0`
 - Original license file: `LICENSE-APACHE`
 
