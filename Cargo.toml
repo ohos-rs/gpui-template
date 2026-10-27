@@ -1,7 +1,7 @@
 [package]
 name = "gpui-template"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 license = "Apache-2.0"
 description = "Minimal GPUI + OpenHarmony (OHOS) Rust template"
 readme = "README.md"
@@ -10,49 +10,16 @@ readme = "README.md"
 crate-type = ["cdylib"]
 
 [dependencies]
-gpui = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49", version = "=0.2.2" }
-gpui_platform = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49" }
-openharmony-ability = { version = "1.0.0-beta.2" }
-openharmony-ability-derive = { version = "1.0.0-beta.1" }
+gpui = { git = "https://github.com/zed-industries/zed", rev = "e30095febcfd25ae81d52e59d7d80c2bd21830c6", default-features = false }
+gpui-ohos = { git = "https://github.com/ohos-rs/gpui-ohos", rev = "46ebefc95115a16fb618315431adcef8bd324c59" }
+openharmony-ability = { git = "https://github.com/harmony-contrib/openharmony-ability.git", rev = "8d66b703f9044a966eaedd720a61ed797049982d", version = "=1.0.0-beta.3" }
+openharmony-ability-derive = { git = "https://github.com/harmony-contrib/openharmony-ability.git", rev = "8d66b703f9044a966eaedd720a61ed797049982d", version = "=1.0.0-beta.3" }
 
-gpui-component = { git = "https://github.com/longbridge/gpui-component.git", rev = "9890a77c2d427f05b2512f05ddc6cce84686f9a6" }
-gpui-component-assets = { git = "https://github.com/longbridge/gpui-component.git", rev = "9890a77c2d427f05b2512f05ddc6cce84686f9a6" }
-gpui-router = { version = "0.3" }
-rust-embed = { version = "8.12.0", features = ["debug-embed"] }
-
-napi-ohos = { version = "=1.2.0" }
-napi-derive-ohos = { version = "=1.2.0" }
-napi-derive-backend-ohos = { version = "=1.2.0" }
+napi-ohos = "=1.2.0"
+napi-derive-ohos = "=1.2.0"
 
 ohos-hilog-binding = { version = "0.2.3", features = ["log"] }
-log = { version = "0.4.34" }
+log = "0.4"
 
 [build-dependencies]
-napi-build-ohos = { version = "=1.2.0" }
-
-[patch.crates-io]
-gpui = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49", version = "=0.2.2" }
-gpui_platform = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49" }
-gpui_macros = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49" }
-# gpui-router 0.3.0 needs this RenderOnce disambiguation with current GPUI.
-gpui-router = { path = "vendor/gpui-router" }
-
-[patch."https://github.com/zed-industries/zed.git"]
-gpui = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49", version = "=0.2.2" }
-gpui_platform = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49" }
-gpui_macros = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49" }
-
-[patch."https://github.com/zed-industries/zed"]
-gpui = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49", version = "=0.2.2" }
-gpui_platform = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49" }
-gpui_macros = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49" }
-
-[patch."https://github.com/richerfu/zed.git"]
-gpui = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49", version = "=0.2.2" }
-gpui_platform = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49" }
-gpui_macros = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49" }
-
-[patch."https://github.com/richerfu/zed"]
-gpui = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49", version = "=0.2.2" }
-gpui_platform = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49" }
-gpui_macros = { git = "https://github.com/ohos-rs/zed.git", rev = "634cfef7092a9182db089837958118281f373a49" }
+napi-build-ohos = "=1.2.0"
