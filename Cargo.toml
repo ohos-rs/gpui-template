@@ -3,23 +3,38 @@ name = "gpui-template"
 version = "0.1.0"
 edition = "2024"
 license = "Apache-2.0"
-description = "Minimal GPUI + OpenHarmony (OHOS) Rust template"
+description = "Minimal GPUI + OpenHarmony (OHOS) Rust template with routing"
 readme = "README.md"
+
+[workspace]
+resolver = "3"
+
+[workspace.dependencies]
+# Keep GPUI, its OHOS platform, and the router on the same published backend.
+gpui = { package = "gpui-pre", version = "=0.3.11", default-features = false }
+gpui-ohos = "=0.0.1-beta.0"
+gpui-router = { version = "=0.7.0", default-features = false, features = ["gpui-pre"] }
+openharmony-ability = "=1.0.0-beta.5"
+openharmony-ability-derive = "=1.0.0-beta.5"
+napi-ohos = "=1.2.0"
+napi-derive-ohos = "=1.2.0"
+napi-build-ohos = "=1.2.0"
+ohos-hilog-binding = { version = "0.2.5", features = ["log"] }
+log = "0.4.35"
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-gpui = { git = "https://github.com/zed-industries/zed", rev = "e30095febcfd25ae81d52e59d7d80c2bd21830c6", default-features = false }
-gpui-ohos = { git = "https://github.com/ohos-rs/gpui-ohos", rev = "46ebefc95115a16fb618315431adcef8bd324c59" }
-openharmony-ability = { git = "https://github.com/harmony-contrib/openharmony-ability.git", rev = "8d66b703f9044a966eaedd720a61ed797049982d", version = "=1.0.0-beta.3" }
-openharmony-ability-derive = { git = "https://github.com/harmony-contrib/openharmony-ability.git", rev = "8d66b703f9044a966eaedd720a61ed797049982d", version = "=1.0.0-beta.3" }
-
-napi-ohos = "=1.2.0"
-napi-derive-ohos = "=1.2.0"
-
-ohos-hilog-binding = { version = "0.2.3", features = ["log"] }
-log = "0.4"
+gpui.workspace = true
+gpui-ohos.workspace = true
+gpui-router.workspace = true
+openharmony-ability.workspace = true
+openharmony-ability-derive.workspace = true
+napi-ohos.workspace = true
+napi-derive-ohos.workspace = true
+ohos-hilog-binding.workspace = true
+log.workspace = true
 
 [build-dependencies]
-napi-build-ohos = "=1.2.0"
+napi-build-ohos.workspace = true
