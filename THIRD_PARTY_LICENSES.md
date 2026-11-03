@@ -2,10 +2,11 @@
 
 This file records license texts for key dependencies used by this project.
 
-## gpui
+## gpui-pre (imported as gpui)
 
-- Crate: `gpui` 0.2.2
-- Source: `https://github.com/zed-industries/zed` (rev `e30095febcfd25ae81d52e59d7d80c2bd21830c6`)
+- Crate: `gpui-pre` 0.3.11
+- Package: `https://crates.io/crates/gpui-pre/0.3.11`
+- Upstream: `https://github.com/zed-industries/zed` (snapshot `f816e1f9263e3a8ef63c4baaa02e1441ce1c6038`)
 - License: `Apache-2.0`
 - Original license file: `LICENSE-APACHE`
 
@@ -236,6 +237,37 @@ Apache License
 
 ## gpui-ohos
 
-- Crate: `gpui-ohos` 0.1.0
-- Source: `https://github.com/ohos-rs/gpui-ohos` (rev `46ebefc95115a16fb618315431adcef8bd324c59`)
+- Crate: `gpui-ohos` 0.0.1-beta.0
+- Package: `https://crates.io/crates/gpui-ohos/0.0.1-beta.0`
+- Source: `https://github.com/ohos-rs/gpui-ohos`
 - License: `MIT OR Apache-2.0`
+
+## gpui-router
+
+- Crate: `gpui-router` 0.7.0
+- Source: `https://github.com/justjavac/gpui-router`
+- License: `MIT`
+
+```text
+MIT License
+
+Copyright (c) 2025 justjavac
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
